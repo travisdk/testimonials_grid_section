@@ -1,0 +1,103 @@
+:root {
+  /*   COLORS */
+  --moderate-violet: hsl(263, 55%, 52%);
+  --violet: #a775f1;
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+  /* RESET */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Barlow Semi Condensed";
+  font-weight: 500;
+  font-size: 13px;
+}
+
+/* BACKGROUNDS */
+.bg-violet {
+  background-color: var(--moderate-violet);
+}
+.bg-very-dark-grayish-blue {
+  background-color: var(--very-dark-grayish-blue);
+}
+.bg-very-dark-blackish-blue {
+  background-color: var(--very-dark-blackish-blue);
+}
+.bg-white {
+  background-color: var(--white);
+}
+/* TEXTS */
+.text-white {
+  color: var(--white);
+}
+.text-very-dark-grayish-blue {
+  color: var(--very-dark-grayish-blue);
+}
+.text-light-grayish-blue {
+  color: var(--light-grayish-blue);
+}
+/* COMPONENTS */
+
+/* CARD */
+.card {
+  padding: 32px;
+  border-radius: 8px;
+  margin: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-header {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 1em;
+}
+.card-avatar {
+  border: 2px solid;
+  border-color: var(--violet);
+  border-radius: 50%;
+  width: 28px;
+}
+
+.card-name-and-title {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-verified {
+  opacity: 50%;
+  font-size: 11px;
+}
+.card-name {
+}
+.card-review-lg {
+  font-weight: 600;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+.card-review-sm {
+  line-height: 18px;
+  opacity: 70%;
+}
+
+/* OTHER  */
+.bg-quotation-sign {
+  background-image: url("images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: top right 24px;
+}
+.dropshadow {
+  box-shadow: 0px 4px 4px 0px hsla(0, 0%, 0%, 0.25);
+}
+
+@media (min-width: 1440px) {
+}
